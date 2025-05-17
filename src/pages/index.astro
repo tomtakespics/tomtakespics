@@ -1,0 +1,24 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Gallery from '../components/Gallery.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<Gallery />
+		<main>
+			<h1 style="text-align: center;">I take photos and turn them into art.</h1>
+			<p>Hello! I’m Thomas Underwood, a photographer who takes photos and turn them into art. Welcome to my part blog, portfolio and passion project.</p>
+			<p>I believe that anyone should have access to high-quality photography, so I make sure to post free regular pictures I’ve taken from my home (rural Norfolk), various cities around the world and other interesting scenes.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
