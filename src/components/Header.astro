@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import ThemeToggle from "./ThemeToggle.astro";
-import { SITE_TITLE, SITE_LOGO_SMALL, UNSPLASH, FACEBOOK, INSTAGRAM, EMAIL } from '../consts';
+import { SITE_TITLE, SITE_LOGO_SMALL, UNSPLASH, EYEEM, FACEBOOK, INSTAGRAM, EMAIL } from '../consts';
 ---
 
 <header>
@@ -29,6 +29,17 @@ import { SITE_TITLE, SITE_LOGO_SMALL, UNSPLASH, FACEBOOK, INSTAGRAM, EMAIL } fro
 					height="32"
 					astro-icon="social/unsplash"
 					><title>Unsplash</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"/></svg
+				>
+			</a>
+			<a href={EYEEM} class="eyeem">
+				<span class="sr-only">Tom's EyeEm</span>
+				<svg
+					viewBox="0 0 512 512"
+					aria-hidden="true"
+					width="32"
+					height="32"
+					astro-icon="social/eyeem"
+					><title>EyeEm</title><path d="M451 400.126H186.566V299.491h237.642V188.617H186.566v-76.421h255.396V0H61v512h390z"/></svg
 				>
 			</a>
 			<a href={FACEBOOK} class="facebook">
@@ -152,6 +163,7 @@ import { SITE_TITLE, SITE_LOGO_SMALL, UNSPLASH, FACEBOOK, INSTAGRAM, EMAIL } fro
 	}
 
 	.unsplash,
+	.eyeem,
 	.facebook,
 	.instagram,
 	.email {
@@ -164,6 +176,9 @@ import { SITE_TITLE, SITE_LOGO_SMALL, UNSPLASH, FACEBOOK, INSTAGRAM, EMAIL } fro
 	}
 	:root.black .unsplash:hover {
 		fill: #f1f1f1;
+	}
+	.eyeem:hover {
+		fill: #00456f;
 	}
 	.facebook:hover {
 		fill: #1877F2;

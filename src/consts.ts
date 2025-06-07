@@ -5,6 +5,7 @@ export const SITE_TITLE = 'Tom Takes Photos';
 export const SITE_DESCRIPTION = 'I take photos and turn them into art.';
 
 export const UNSPLASH = 'https://unsplash.com/@tomtakespics';
+export const EYEEM = 'https://www.eyeem.com/u/tomtakespics_';
 export const FACEBOOK = 'https://www.facebook.com/tomtakespics';
 export const INSTAGRAM = 'https://www.instagram.com/tomtakespics_';
 export const EMAIL = 'mailto:contact@tomstuff.uk';
